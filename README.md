@@ -11,7 +11,7 @@
 - ⚡ Hobbies : Coding,Cricket,Music,Riding
 - 🌱 Student at Sri Sairam Engineering College.
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=harrishmarro&show_icons=true&theme=radical)
+
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=harrishmarro&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=harrishmarro&" alt="harrishmarro" /></p>
