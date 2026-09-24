@@ -2,18 +2,13 @@
 
 ## 🙋‍♂️ About Me
 
-- 🔭 I’m currently learning React Native and Ionic React .
+- 🔭 I’m currently learning MLOPS and Stats.
 - 👯 I’m looking to collaborate with Developers and Researchers on Projects..
-- 🤝 I’m Currently doing projects on IOT, Web Development, Machine Learning ,Cybersecurity ,Game Designing.
-// - My Portfolio [https://vermillion-manatee-ab0681.netlify.app](https://vermillion-manatee-ab0681.netlify.app/)
-- 👨‍💻 Coding Portfolio [http://www.skillrack.com/profile/308490/db0ae5d32e686ac0e992cbdead821f79c47d82d0](http://www.skillrack.com/profile/308490/db0ae5d32e686ac0e992cbdead821f79c47d82d0)
+- 🤝 I’m Currently doing projects on Machine Learning and Deep Learning.
 - 📫 How to reach me **harishmacking11@gmail.com**
 - ⚡ Hobbies : Coding,Cricket,Music,Riding
-- 🌱 Student at Sri Sairam Engineering College.
+- 🌱 Student at University of Victoria, Canada.
 
-
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=harrishmarro&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=harrishmarro&" alt="harrishmarro" /></p>
 
 ## Tools and languages known :
