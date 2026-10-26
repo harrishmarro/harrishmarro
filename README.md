@@ -1,51 +1,107 @@
-# Hi there , I'm Harish! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
+<div align="center">
 
-## 🙋‍♂️ About Me
+# Hey, I'm Harish P. S. 👋
 
-- 🔭 I’m currently learning MLOPS and Stats.
-- 👯 I’m looking to collaborate with Developers and Researchers on Projects..
-- 🤝 I’m Currently doing projects on Machine Learning and Deep Learning.
-- 📫 How to reach me **harishmacking11@gmail.com**
-- ⚡ Hobbies : Coding,Cricket,Music,Riding
-- 🌱 Student at University of Victoria, Canada.
+### Data Engineer · Cloud Data Platforms · Applied Data Science
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=harrishmarro&" alt="harrishmarro" /></p>
+*I turn complex data flows into reliable data products that people can actually use.*
 
-## Tools and languages known :
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![Blender](https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white)
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![Kali](https://img.shields.io/badge/Kali-268BEE?style=for-the-badge&logo=kalilinux&logoColor=white)
-![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white)
-![PyCharm](https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green)
-![Spyder](https://img.shields.io/badge/Spyder-838485?style=for-the-badge&logo=spyder%20ide&logoColor=maroon)
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white)
-![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
-![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
+[![LinkedIn](https://img.shields.io/badge/Let's_connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/harish-ps-59182b201)
+[![Email](https://img.shields.io/badge/Say_hello-Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:harishmacking11@gmail.com)
+[![GitHub](https://img.shields.io/badge/Explore_my_work-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/harrishmarro)
 
-## Connect with me:
-<p align="left">
-<a href="https://www.linkedin.com/in/harish-ps-59182b201" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="harrishmarro" height="30" width="40" /></a>
-<a href="https://instagram.com/harr_ish1234" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="harrishmarro" height="30" width="40" /></a>
-</p>
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=harrishmarro&label=Profile%20views&color=0e75b6&style=flat" alt="harrishmarro" /> </p>
+</div>
 
+## A little about me
 
+I'm a **Master of Engineering student in Applied Data Science at the University of Victoria** and a **former data engineer at Ford Motor Company**. I like the part of data engineering where cloud infrastructure, thoughtful design, and real-world decisions meet.
 
+- 📍 Based in **Victoria, BC** and interested in data engineering opportunities across Canada
+- 🔭 Exploring **cloud data platforms, data reliability, and AI-ready pipelines**
+- ⚡ Away from my keyboard: **cricket, music, and riding**
+
+<details>
+<summary><b>My path so far</b></summary>
+
+- 🎓 **University of Victoria** — Master of Engineering in Applied Data Science; coursework expected to finish in September 2027
+- 💼 **Ford Motor Company** — Data Engineer, July 2024–June 2026
+- 💼 **Ford Motor Company** — Data Engineering Intern, January–July 2024
+
+</details>
+
+## Impact in numbers
+
+| ☁️ Cloud data | 🚀 Delivery | 📊 Visibility |
+| :---: | :---: | :---: |
+| **80%** improvement in data retrieval efficiency during a Marketplace migration to GCP | **57 → 4** Tekton pipelines after consolidation | **90%** less manual pipeline monitoring with dashboards |
+
+<details>
+<summary><b>See more of my work at Ford</b></summary>
+
+- Worked with **Pub/Sub, Dataflow, Dataproc, and BigQuery** to prepare data for analytics and downstream AI applications.
+- Managed **six enterprise data products** and their outcome dashboards.
+- Built **Python and BigQuery data contract checks** and traced lineage through BigQuery metadata and Airflow dependencies.
+- Developed monitoring and **Qlik Sense dashboards** for pipeline health.
+
+</details>
+
+## GitHub activity
+
+<div align="center">
+
+![Harish's GitHub stats](https://github-readme-stats.vercel.app/api?username=harrishmarro&show_icons=true&hide_border=true&theme=tokyonight)
+
+![Harish's GitHub contribution streak](https://streak-stats.demolab.com?user=harrishmarro&hide_border=true&theme=tokyonight)
+
+![Languages in Harish's public repositories](https://github-readme-stats.vercel.app/api/top-langs/?username=harrishmarro&layout=compact&hide_border=true&theme=tokyonight)
+
+</div>
+
+*These cards reflect public GitHub activity, not overall experience, and update through external services.*
+
+## Featured projects
+
+### 🚗 [Retail-Mesh Intelligence](https://github.com/harrishmarro/Retail-Mesh-Intelligence)
+A vehicle retail platform concept connecting manufacturers, dealers, service providers, and customers. I designed its conceptual data model and architecture for operational data and analytics. *Currently at the architecture and design stage.*
+
+### 🎙️ Dysarthria Speech Analytics
+A research workflow using **Python, Whisper, WavLM, and PyTorch** to analyze approximately **17,600 English speech recordings** and produce file- and speaker-level summaries. *Repository pending publication.*
+
+### 🛠️ [Smart Asset Maintenance Management](https://github.com/harrishmarro/NLCILAMC)
+An application for maintaining and retrieving annual maintenance contract and computer asset data.
+
+## My toolkit
+
+**Data and cloud**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square)
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![BigQuery](https://img.shields.io/badge/BigQuery-669DF6?style=flat-square&logo=googlebigquery&logoColor=white)
+![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white)
+
+**Engineering and analytics**
+
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+
+<details>
+<summary><b>More tools and techniques</b></summary>
+
+Pub/Sub · Dataflow · Dataproc · Tekton CI/CD · Qlik Sense · NumPy · data modeling · data contracts · data lineage · ETL/ELT
+
+</details>
+
+## Certifications and recognition
+
+- 🏅 **Google Cloud Certified — Professional Data Engineer**
+- 🏅 **Cisco CCNA: Switching, Routing & Wireless Essentials**
+- 🏆 **Ford Certificate of Appreciation** — Health Monitoring Dashboard
+- 📄 **IEEE YESIST12 2023 Special Track finalist** — *Third Eye*, AI-assisted wearable glasses for visually impaired people
+
+## Let's build something useful
+
+I'm interested in teams working on **dependable cloud data platforms and practical AI applications**. If that sounds like your work, [connect with me on LinkedIn](https://www.linkedin.com/in/harish-ps-59182b201) or [send me an email](mailto:harishmacking11@gmail.com).
