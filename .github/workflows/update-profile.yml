@@ -1,0 +1,64 @@
+name: Update profile README
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/update_profile.py"
+      - ".github/workflows/update-profile.yml"
+  schedule:
+    # 09:12 Vancouver is 16:12 UTC during DST and 17:12 UTC otherwise.
+    - cron: "12 16 * * *"
+    - cron: "12 17 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-readme-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Vancouver schedule
+        id: schedule
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" != "schedule" || "$(TZ=America/Vancouver date +%H)" == "09" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check out profile repository
+        if: steps.schedule.outputs.run == 'true'
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        if: steps.schedule.outputs.run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Update recent public work
+        if: steps.schedule.outputs.run == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_profile.py
+
+      - name: Commit README changes
+        if: steps.schedule.outputs.run == 'true'
+        shell: bash
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update recent GitHub activity"
+          git push

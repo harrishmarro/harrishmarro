@@ -59,6 +59,12 @@ I'm a **Master of Engineering student in Applied Data Science at the University 
 
 *These cards reflect public GitHub activity, not overall experience, and update through external services.*
 
+## Latest public work
+
+<!-- RECENT-REPOS:START -->
+- **[Retail-Mesh Intelligence](https://github.com/harrishmarro/Retail-Mesh-Intelligence)** — A web tool for managing retail and dealer data. _Updated October 15, 2026._
+<!-- RECENT-REPOS:END -->
+
 ## Featured projects
 
 ### 🚗 [Retail-Mesh Intelligence](https://github.com/harrishmarro/Retail-Mesh-Intelligence)
