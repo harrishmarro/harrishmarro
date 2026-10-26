@@ -15,6 +15,7 @@ START = "<!-- RECENT-REPOS:START -->"
 END = "<!-- RECENT-REPOS:END -->"
 MAX_PROJECTS = 3
 MAX_AGE_DAYS = 730
+EXCLUDED_REPOSITORIES = {"AI-regoginition"}
 DESCRIPTION_OVERRIDES = {
     "Retail-Mesh-Intelligence": "A web tool for managing retail and dealer data",
 }
@@ -44,6 +45,7 @@ def recent_projects(repositories):
         if (
             repository.get("fork")
             or repository.get("archived")
+            or repository.get("name") in EXCLUDED_REPOSITORIES
             or repository.get("name", "").lower() == USERNAME
         ):
             continue
