@@ -41,7 +41,11 @@ def recent_projects(repositories):
     cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
     candidates = []
     for repository in repositories:
-        if repository.get("fork") or repository.get("name", "").lower() == USERNAME:
+        if (
+            repository.get("fork")
+            or repository.get("archived")
+            or repository.get("name", "").lower() == USERNAME
+        ):
             continue
         if not repository.get("description") or not repository.get("pushed_at"):
             continue
