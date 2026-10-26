@@ -62,6 +62,7 @@ I'm a **Master of Engineering student in Applied Data Science at the University 
 ## Latest public work
 
 <!-- RECENT-REPOS:START -->
+- **[AI-regoginition](https://github.com/harrishmarro/AI-regoginition)** — speech recoginition is made using python like alexa. _Updated October 26, 2026._
 - **[Retail-Mesh-Intelligence](https://github.com/harrishmarro/Retail-Mesh-Intelligence)** — A web tool for managing retail and dealer data. _Updated October 15, 2026._
 <!-- RECENT-REPOS:END -->
 
