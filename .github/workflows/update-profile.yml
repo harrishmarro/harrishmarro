@@ -59,7 +59,7 @@ jobs:
         if: steps.schedule.outputs.run == 'true'
         shell: bash
         run: |
-          git add README.md assets/github-activity.svg
+          git add README.md assets/github-activity.svg assets/engineering-kpis.svg
           if git diff --cached --quiet; then
             echo "Profile is already current."
             exit 0

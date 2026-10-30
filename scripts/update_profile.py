@@ -5,6 +5,7 @@ import html
 import json
 import os
 import re
+import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -12,6 +13,8 @@ from pathlib import Path
 USERNAME = "harrishmarro"
 README = Path(__file__).resolve().parents[1] / "README.md"
 ACTIVITY_CARD = README.parent / "assets" / "github-activity.svg"
+ENGINEERING_CARD = README.parent / "assets" / "engineering-kpis.svg"
+RESEARCH_REPOSITORY = "harrishmarro/Speaker-Independent-dysarthria-analysis"
 START = "<!-- RECENT-REPOS:START -->"
 END = "<!-- RECENT-REPOS:END -->"
 MAX_PROJECTS = 3
@@ -125,6 +128,124 @@ def render_activity_svg(repositories):
 '''
 
 
+def fetch_public_json(url):
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "github-profile-readme-updater",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    for use_token in (True, False) if token else (False,):
+        request_headers = headers if use_token else {
+            key: value for key, value in headers.items() if key != "Authorization"
+        }
+        try:
+            request = urllib.request.Request(url, headers=request_headers)
+            with urllib.request.urlopen(request, timeout=30) as response:
+                return json.load(response)
+        except urllib.error.HTTPError as error:
+            if not use_token or error.code not in (403, 404):
+                print(f"Public KPI endpoint unavailable: HTTP {error.code}")
+                return None
+        except (urllib.error.URLError, TimeoutError) as error:
+            print(f"Public KPI endpoint unavailable: {type(error).__name__}")
+            return None
+    return None
+
+
+def fetch_engineering_signals():
+    base = f"https://api.github.com/repos/{RESEARCH_REPOSITORY}"
+    ci = fetch_public_json(
+        f"{base}/actions/workflows/ci.yml/runs?branch=main&status=completed&per_page=10"
+    )
+    security = fetch_public_json(
+        f"{base}/actions/workflows/security.yml/runs?branch=main&status=completed&per_page=1"
+    )
+    issues = []
+    page = 1
+    while True:
+        batch = fetch_public_json(
+            f"{base}/issues?state=open&labels=security&per_page=100&page={page}"
+        )
+        if not isinstance(batch, list):
+            issues = None
+            break
+        issues.extend(batch)
+        if len(batch) < 100:
+            break
+        page += 1
+    return ci, security, issues
+
+
+def render_engineering_svg(ci, security, issues):
+    runs = ci.get("workflow_runs", []) if isinstance(ci, dict) else []
+    completed = [run for run in runs if run.get("conclusion")]
+    passed = sum(run["conclusion"] == "success" for run in completed)
+    ci_value = f"{round(100 * passed / len(completed))}%" if completed else "N/A"
+    ci_detail = f"{passed}/{len(completed)} recent main runs" if completed else "No public run data"
+
+    security_runs = security.get("workflow_runs", []) if isinstance(security, dict) else []
+    latest_security = security_runs[0] if security_runs else None
+    if latest_security and latest_security.get("conclusion") == "success":
+        security_value = "Passing"
+        security_color = "#66d9a5"
+    elif latest_security:
+        security_value = "Review"
+        security_color = "#ffc978"
+    else:
+        security_value = "N/A"
+        security_color = "#a8b9ef"
+    security_detail = (
+        latest_security.get("created_at", "")[:10] if latest_security else "No public run data"
+    )
+
+    if isinstance(issues, list):
+        open_issues = sum("pull_request" not in issue for issue in issues)
+        issue_value = str(open_issues)
+        issue_detail = "Open public security issues"
+    else:
+        issue_value = "N/A"
+        issue_detail = "Public issue data unavailable"
+    ci_detail = html.escape(ci_detail)
+    security_detail = html.escape(security_detail)
+    issue_detail = html.escape(issue_detail)
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="780" height="210"
+  viewBox="0 0 780 210" role="img" aria-labelledby="title description">
+  <title id="title">Engineering quality and security signals</title>
+  <desc id="description">Main-branch CI: {ci_value}, {ci_detail}. Latest public security
+    workflow: {security_value}, {security_detail}. Public issues labeled security:
+    {issue_value}. Private dependency alerts are excluded.</desc>
+  <rect width="780" height="210" rx="16" fill="#171b2e"/>
+  <text x="28" y="37" fill="#a8b9ef" font-family="Arial,sans-serif"
+    font-size="16">ENGINEERING QUALITY AND SECURITY</text>
+  <line x1="260" y1="55" x2="260" y2="173" stroke="#455071"/>
+  <line x1="500" y1="55" x2="500" y2="173" stroke="#455071"/>
+  <text x="28" y="106" fill="#79a7ff" font-family="Arial,sans-serif"
+    font-size="42" font-weight="bold">{ci_value}</text>
+  <text x="28" y="135" fill="#d6ddf5" font-family="Arial,sans-serif"
+    font-size="16">CI pass rate</text>
+  <text x="28" y="159" fill="#a8b9ef" font-family="Arial,sans-serif"
+    font-size="13">{ci_detail}</text>
+  <text x="286" y="106" fill="{security_color}" font-family="Arial,sans-serif"
+    font-size="30" font-weight="bold">{security_value}</text>
+  <text x="286" y="135" fill="#d6ddf5" font-family="Arial,sans-serif"
+    font-size="16">Latest security scan</text>
+  <text x="286" y="159" fill="#a8b9ef" font-family="Arial,sans-serif"
+    font-size="13">{security_detail}</text>
+  <text x="526" y="106" fill="#79a7ff" font-family="Arial,sans-serif"
+    font-size="42" font-weight="bold">{issue_value}</text>
+  <text x="526" y="135" fill="#d6ddf5" font-family="Arial,sans-serif"
+    font-size="16">Public security issues</text>
+  <text x="526" y="159" fill="#a8b9ef" font-family="Arial,sans-serif"
+    font-size="13">{issue_detail}</text>
+  <text x="28" y="190" fill="#8794b9" font-family="Arial,sans-serif"
+    font-size="12">Public signals only · private dependency alerts are not counted</text>
+</svg>
+'''
+
+
 def main():
     content = README.read_text(encoding="utf-8")
     pattern = re.compile(re.escape(START) + r".*?" + re.escape(END), re.DOTALL)
@@ -138,6 +259,11 @@ def main():
     if not ACTIVITY_CARD.exists() or ACTIVITY_CARD.read_text(encoding="utf-8") != card:
         ACTIVITY_CARD.write_text(card, encoding="utf-8")
         print("Updated public activity card")
+    engineering_card = render_engineering_svg(*fetch_engineering_signals())
+    if (not ENGINEERING_CARD.exists()
+            or ENGINEERING_CARD.read_text(encoding="utf-8") != engineering_card):
+        ENGINEERING_CARD.write_text(engineering_card, encoding="utf-8")
+        print("Updated engineering KPI card")
     if updated != content:
         README.write_text(updated, encoding="utf-8")
         print("Updated recent public work in README.md")
