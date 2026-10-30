@@ -55,7 +55,6 @@ I'm a **Master of Engineering student in Applied Data Science at the University 
 
 </div>
 
-*These cards refresh with the profile workflow. They measure public repository activity and the [dysarthria research repository](https://github.com/harrishmarro/Speaker-Independent-dysarthria-analysis)'s engineering signals; they do not measure private work or professional experience.*
 
 | KPI | How I measure it | Evidence |
 | --- | --- | --- |
