@@ -59,12 +59,12 @@ jobs:
         if: steps.schedule.outputs.run == 'true'
         shell: bash
         run: |
-          if git diff --quiet -- README.md; then
-            echo "README is already current."
+          git add README.md assets/github-activity.svg
+          if git diff --cached --quiet; then
+            echo "Profile is already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
           git commit -m "Update recent GitHub activity"
           git push

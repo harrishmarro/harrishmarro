@@ -49,15 +49,11 @@ I'm a **Master of Engineering student in Applied Data Science at the University 
 
 <div align="center">
 
-![Harish's GitHub stats](https://github-readme-stats.vercel.app/api?username=harrishmarro&show_icons=true&hide_border=true&theme=tokyonight)
-
-![Harish's GitHub contribution streak](https://streak-stats.demolab.com?user=harrishmarro&hide_border=true&theme=tokyonight)
-
-![Languages in Harish's public repositories](https://github-readme-stats.vercel.app/api/top-langs/?username=harrishmarro&layout=compact&hide_border=true&theme=tokyonight)
+![Public GitHub projects, stars, and recently updated work](assets/github-activity.svg)
 
 </div>
 
-*These cards reflect public GitHub activity, not overall experience, and update through external services.*
+*This card summarizes public, non-archived repositories and refreshes with the profile workflow. It does not measure professional experience or private work.*
 
 ## Latest public work
 
