@@ -240,8 +240,6 @@ def render_engineering_svg(ci, security, issues):
     font-size="16">Public security issues</text>
   <text x="526" y="159" fill="#a8b9ef" font-family="Arial,sans-serif"
     font-size="13">{issue_detail}</text>
-  <text x="28" y="190" fill="#8794b9" font-family="Arial,sans-serif"
-    font-size="12">Public signals only · private dependency alerts are not counted</text>
 </svg>
 '''
 
