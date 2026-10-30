@@ -18,6 +18,9 @@ MAX_AGE_DAYS = 730
 EXCLUDED_REPOSITORIES = {"AI-regoginition"}
 DESCRIPTION_OVERRIDES = {
     "Retail-Mesh-Intelligence": "A web tool for managing retail and dealer data",
+    "Speaker-Independent-dysarthria-analysis": (
+        "Speaker-independent dysarthria research with reproducible acoustic baselines"
+    ),
 }
 
 
@@ -49,7 +52,8 @@ def recent_projects(repositories):
             or repository.get("name", "").lower() == USERNAME
         ):
             continue
-        if not repository.get("description") or not repository.get("pushed_at"):
+        if (not repository.get("description") and repository.get("name") not in
+                DESCRIPTION_OVERRIDES) or not repository.get("pushed_at"):
             continue
         pushed = datetime.fromisoformat(repository["pushed_at"].replace("Z", "+00:00"))
         if pushed >= cutoff:
@@ -66,7 +70,7 @@ def render(projects):
         name = html.escape(repository["name"])
         url = html.escape(repository["html_url"], quote=True)
         description = DESCRIPTION_OVERRIDES.get(
-            repository["name"], repository["description"].strip().rstrip(".")
+            repository["name"], (repository.get("description") or "").strip().rstrip(".")
         )
         description = html.escape(description)
         updated = pushed.strftime("%B %d, %Y").replace(" 0", " ")
