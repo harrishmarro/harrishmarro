@@ -51,9 +51,19 @@ I'm a **Master of Engineering student in Applied Data Science at the University 
 
 ![Public GitHub projects, stars, and recently updated work](assets/github-activity.svg)
 
+![CI reliability and public security signals](assets/engineering-kpis.svg)
+
 </div>
 
-*This card summarizes public, non-archived repositories and refreshes with the profile workflow. It does not measure professional experience or private work.*
+*These cards refresh with the profile workflow. They measure public repository activity and the [dysarthria research repository](https://github.com/harrishmarro/Speaker-Independent-dysarthria-analysis)'s engineering signals; they do not measure private work or professional experience.*
+
+| KPI | How I measure it | Evidence |
+| --- | --- | --- |
+| CI reliability | Successful runs among the last 10 completed `main` runs | [CI history](https://github.com/harrishmarro/Speaker-Independent-dysarthria-analysis/actions/workflows/ci.yml) |
+| Security checks | Latest `main` workflow result for CodeQL, Bandit, and dependency auditing | [Security history](https://github.com/harrishmarro/Speaker-Independent-dysarthria-analysis/actions/workflows/security.yml) |
+| Public security backlog | Open public issues labeled `security` | [Issue tracker](https://github.com/harrishmarro/Speaker-Independent-dysarthria-analysis/issues?q=is%3Aissue+is%3Aopen+label%3Asecurity) |
+
+Private Dependabot alerts are excluded from the public issue count. A passing workflow does not mean every vulnerability is fixed.
 
 ## Latest public work
 

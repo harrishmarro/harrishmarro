@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="210"
+  viewBox="0 0 780 210" role="img" aria-labelledby="title description">
+  <title id="title">Engineering quality and security signals</title>
+  <desc id="description">Main-branch CI: 90%, 9/10 recent main runs. Latest public security
+    workflow: Passing, 2026-10-30. Public issues labeled security:
+    0. Private dependency alerts are excluded.</desc>
+  <rect width="780" height="210" rx="16" fill="#171b2e"/>
+  <text x="28" y="37" fill="#a8b9ef" font-family="Arial,sans-serif"
+    font-size="16">ENGINEERING QUALITY AND SECURITY</text>
+  <line x1="260" y1="55" x2="260" y2="173" stroke="#455071"/>
+  <line x1="500" y1="55" x2="500" y2="173" stroke="#455071"/>
+  <text x="28" y="106" fill="#79a7ff" font-family="Arial,sans-serif"
+    font-size="42" font-weight="bold">90%</text>
+  <text x="28" y="135" fill="#d6ddf5" font-family="Arial,sans-serif"
+    font-size="16">CI pass rate</text>
+  <text x="28" y="159" fill="#a8b9ef" font-family="Arial,sans-serif"
+    font-size="13">9/10 recent main runs</text>
+  <text x="286" y="106" fill="#66d9a5" font-family="Arial,sans-serif"
+    font-size="30" font-weight="bold">Passing</text>
+  <text x="286" y="135" fill="#d6ddf5" font-family="Arial,sans-serif"
+    font-size="16">Latest security scan</text>
+  <text x="286" y="159" fill="#a8b9ef" font-family="Arial,sans-serif"
+    font-size="13">2026-10-30</text>
+  <text x="526" y="106" fill="#79a7ff" font-family="Arial,sans-serif"
+    font-size="42" font-weight="bold">0</text>
+  <text x="526" y="135" fill="#d6ddf5" font-family="Arial,sans-serif"
+    font-size="16">Public security issues</text>
+  <text x="526" y="159" fill="#a8b9ef" font-family="Arial,sans-serif"
+    font-size="13">Open public security issues</text>
+  <text x="28" y="190" fill="#8794b9" font-family="Arial,sans-serif"
+    font-size="12">Public signals only · private dependency alerts are not counted</text>
+</svg>
