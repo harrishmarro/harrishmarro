@@ -8,6 +8,7 @@ on:
       - ".github/workflows/update-profile.yml"
   schedule:
     # 09:12 Vancouver is 16:12 UTC during DST and 17:12 UTC otherwise.
+    # Select by the originating cron and current UTC offset, since Actions may start late.
     - cron: "12 16 * * *"
     - cron: "12 17 * * *"
   workflow_dispatch:
@@ -23,11 +24,16 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Check Vancouver schedule
+      - name: Select Vancouver schedule
         id: schedule
         shell: bash
+        env:
+          SCHEDULED_CRON: ${{ github.event.schedule }}
         run: |
-          if [[ "${{ github.event_name }}" != "schedule" || "$(TZ=America/Vancouver date +%H)" == "09" ]]; then
+          offset="$(TZ=America/Vancouver date +%z)"
+          if [[ "$GITHUB_EVENT_NAME" != "schedule" ]] || \
+             [[ "$offset" == "-0700" && "$SCHEDULED_CRON" == "12 16 * * *" ]] || \
+             [[ "$offset" == "-0800" && "$SCHEDULED_CRON" == "12 17 * * *" ]]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "run=false" >> "$GITHUB_OUTPUT"

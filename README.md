@@ -70,8 +70,8 @@ I'm a **Master of Engineering student in Applied Data Science at the University 
 ### 🚗 [Retail-Mesh Intelligence](https://github.com/harrishmarro/Retail-Mesh-Intelligence)
 A vehicle retail platform concept connecting manufacturers, dealers, service providers, and customers. I designed its conceptual data model and architecture for operational data and analytics. *Currently at the architecture and design stage.*
 
-### 🎙️ Dysarthria Speech Analytics
-A research workflow using **Python, Whisper, WavLM, and PyTorch** to analyze approximately **17,600 English speech recordings** and produce file- and speaker-level summaries. *Repository pending publication.*
+### 🎙️ [Dysarthria Speech Analytics](https://github.com/harrishmarro/Speaker-Independent-dysarthria-analysis)
+A speaker-independent speech research project with **reproducible acoustic baselines, speaker-disjoint evaluation, and documented negative results** on private TORGO data. WavLM and Mixture-of-Experts experiments are planned; no clinical performance claim is made.
 
 ### 🛠️ [Smart Asset Maintenance Management](https://github.com/harrishmarro/NLCILAMC)
 An application for maintaining and retrieving annual maintenance contract and computer asset data.
