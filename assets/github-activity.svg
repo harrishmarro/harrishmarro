@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="176"
+  viewBox="0 0 780 176" role="img" aria-labelledby="title description">
+  <title id="title">Harish's public GitHub work</title>
+  <desc id="description">18 public, non-archived projects; 18 stars; most recently updated project: Speaker-Independent-dysarthria-analysis</desc>
+  <rect width="780" height="176" rx="16" fill="#171b2e"/>
+  <text x="28" y="36" fill="#a8b9ef" font-family="Arial,sans-serif"
+    font-size="16">PUBLIC GITHUB WORK</text>
+  <line x1="260" y1="55" x2="260" y2="145" stroke="#455071"/>
+  <line x1="500" y1="55" x2="500" y2="145" stroke="#455071"/>
+  <text x="28" y="102" fill="#79a7ff" font-family="Arial,sans-serif"
+    font-size="42" font-weight="bold">18</text>
+  <text x="28" y="136" fill="#d6ddf5" font-family="Arial,sans-serif"
+    font-size="16">Public projects</text>
+  <text x="286" y="102" fill="#79a7ff" font-family="Arial,sans-serif"
+    font-size="42" font-weight="bold">18</text>
+  <text x="286" y="136" fill="#d6ddf5" font-family="Arial,sans-serif"
+    font-size="16">Stars earned</text>
+  <text x="526" y="91" fill="#79a7ff" font-family="Arial,sans-serif"
+    font-size="19" font-weight="bold">Speaker-Independent-d…</text>
+  <text x="526" y="136" fill="#d6ddf5" font-family="Arial,sans-serif"
+    font-size="16">Recently updated</text>
+</svg>
