@@ -2,7 +2,7 @@
   viewBox="0 0 780 210" role="img" aria-labelledby="title description">
   <title id="title">Engineering quality and security signals</title>
   <desc id="description">Main-branch CI: 100%, 10/10 recent main runs. Latest public security
-    workflow: Passing, 2026-10-31. Public issues labeled security:
+    workflow: Passing, 2026-11-02. Public issues labeled security:
     0. Private dependency alerts are excluded.</desc>
   <rect width="780" height="210" rx="16" fill="#171b2e"/>
   <text x="28" y="37" fill="#a8b9ef" font-family="Arial,sans-serif"
@@ -20,7 +20,7 @@
   <text x="286" y="135" fill="#d6ddf5" font-family="Arial,sans-serif"
     font-size="16">Latest security scan</text>
   <text x="286" y="159" fill="#a8b9ef" font-family="Arial,sans-serif"
-    font-size="13">2026-10-31</text>
+    font-size="13">2026-11-02</text>
   <text x="526" y="106" fill="#79a7ff" font-family="Arial,sans-serif"
     font-size="42" font-weight="bold">0</text>
   <text x="526" y="135" fill="#d6ddf5" font-family="Arial,sans-serif"
