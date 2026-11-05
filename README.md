@@ -67,9 +67,9 @@ Private Dependabot alerts are excluded from the public issue count. A passing wo
 ## Latest public work
 
 <!-- RECENT-REPOS:START -->
+- **[Retail-Mesh-Intelligence](https://github.com/harrishmarro/Retail-Mesh-Intelligence)** — A web tool for managing retail and dealer data. _Updated November 5, 2026._
 - **[Speaker-Independent-dysarthria-analysis](https://github.com/harrishmarro/Speaker-Independent-dysarthria-analysis)** — Speaker-independent dysarthria research with reproducible acoustic baselines. _Updated November 2, 2026._
 - **[AI-Assist](https://github.com/harrishmarro/AI-Assist)** — speech recoginition is made using python like alexa. _Updated October 26, 2026._
-- **[Retail-Mesh-Intelligence](https://github.com/harrishmarro/Retail-Mesh-Intelligence)** — A web tool for managing retail and dealer data. _Updated October 15, 2026._
 <!-- RECENT-REPOS:END -->
 
 ## Featured projects
